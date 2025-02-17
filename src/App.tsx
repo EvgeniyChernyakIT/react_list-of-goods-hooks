@@ -49,7 +49,7 @@ function getPreparedGoodList(
 }
 
 export const App: React.FC = () => {
-  const [sortField, setSortField] = useState('');
+  const [sortField, setSortField] = useState(SORT_FIELD_ALPHABETICALLY);
   const [isReversed, setIsReversed] = useState(false);
 
   const visibleGoodsList = getPreparedGoodList(goodsFromServer, {
